@@ -9,7 +9,7 @@
         <Version>1.0.0</Version>
         <Authors>Jonteohr</Authors>
         <Description>Basic client for setting up communication to a physical arduino board.</Description>
-        <PackageProjectUrl>https://github.com/jonteohr/ArduinoSharp</PackageProjectUrl>
+        <PackageProjectUrl>https://github.com/jonteohr/Arduino.Sharp</PackageProjectUrl>
         <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
         <Copyright>2024 Jonathan Öhrström</Copyright>
         <PackageTags>arduino c# sharp serial ports port communication nano</PackageTags>
