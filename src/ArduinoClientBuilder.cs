@@ -33,6 +33,18 @@ namespace Arduino.Sharp
             return this;
         }
 
+        private bool m_leonardo;
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="enable"></param>
+        /// <returns></returns>
+        public ArduinoClientBuilder WithLeonardoSupport(bool enable = true)
+        {
+            m_leonardo = enable;
+            return this;
+        }
+
         /// <summary>
         /// Builds the ArduinoClient with specified settings
         /// </summary>
@@ -43,7 +55,7 @@ namespace Arduino.Sharp
             if (m_baudRate == 0 || m_portName == string.Empty)
                 throw new ArgumentException("Not enough settings passed");
             
-            return new ArduinoClient(m_portName, m_baudRate);
+            return new ArduinoClient(m_portName, m_baudRate, m_leonardo);
         }
     }
 }
